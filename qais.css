@@ -1,0 +1,694 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'roboto', Arial, sans-serif;
+    line-height: 1.1;
+}
+a{
+    text-decoration: none;
+}
+p {
+    line-height: 1.6;
+}
+
+.gray {
+    color: #a8a8a8;
+}
+
+.background {
+    background: #282829;
+}
+
+.icon {
+    width: 30px;
+}
+
+body {
+    background: #161718;
+    color: white;
+}
+
+#page {
+    padding: 75px 0;
+    display: flex;
+    width: 89%;
+    margin: 0 auto;
+    gap: 10px;
+}
+
+#left {
+    flex: 7;
+    padding: 0 5px 0 0;
+    min-width: 0;
+}
+
+#right {
+    flex: 4;
+    min-width: 0;
+}
+
+#main-video {
+    width: 100%;
+    border-radius: 12px;
+}
+
+#main-title {
+    font-size: 1.2rem;
+    margin: 14px 0 5px;
+}
+
+#channel-video-bar {
+    display: flex;
+    align-items: center;
+    gap: 35px;
+}
+
+#channel {
+    display: flex;
+    align-items: center;
+    vertical-align: middle;
+}
+
+#channel>img {
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+}
+
+#main-channel-name {
+    display: flex;
+}
+
+#main-channel-name:hover {
+    cursor: pointer;
+}
+
+#tick {
+    height: 14px;
+    position: relative;
+    bottom: -5px;
+    left: 3px;
+}
+
+#channel-inf {
+    margin: 0 20px 0px 7px;
+    padding: 5px;
+}
+
+#subs {
+    font-size: 0.8rem;
+    margin-top: -2px;
+}
+
+#channel button {
+    width: 95px;
+    height: 36px;
+    border-radius: 50px;
+    border: none;
+    font-size: .9rem;
+    cursor: pointer;
+}
+
+#channel button:hover {
+    background: rgb(214, 214, 214);
+}
+
+#video-inf {
+    display: flex;
+    justify-content: space-between;
+    gap: 7px;
+}
+
+#likes {
+    display: flex;
+    width: 135px;
+    border-radius: 50px;
+    margin-right: 5px;
+}
+
+#like,
+#dislike {
+    display: flex;
+    align-items: center;
+    gap: 2px;
+}
+
+#like {
+    border-radius: 50px 0 0 50px;
+    padding: 0px 15px 0px 6px;
+}
+
+#dislike {
+    gap: 8px;
+    border-radius: 0 50px 50px 0;
+    width: 100%;
+}
+
+#like img,
+#dislike img {
+    height: 37px;
+}
+
+#like img {
+    height: 31px;
+}
+
+#middle-line {
+    height: 70%;
+    width: 1px;
+    background: #545455;
+}
+
+#like:hover {
+    background: #3f3e3f;
+    cursor: pointer;
+}
+
+#dislike:hover {
+    background: #3f3e3f;
+    cursor: pointer;
+}
+
+#share,
+#save {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    border-radius: 50px;
+    width: 87px;
+    padding: 2px;
+    font-size: .8rem;
+    font-weight: 600;
+}
+
+#share img,
+#save img {
+    height: 35px;
+    width: 32px;
+    padding-left: 5px;
+}
+
+#share:hover,
+#save:hover {
+    background: #3f3e3f;
+    cursor: pointer;
+}
+
+#save {
+    width: 83px;
+}
+
+#more {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    width: 37px;
+}
+
+#more:hover {
+    background: #3f3e3f;
+    cursor: pointer;
+}
+
+#desc {
+    padding: 13px;
+    border-radius: 12px;
+    margin: 10px 0 16px;
+    font-size: .95rem;
+}
+
+#desc>p {
+    line-height: 1.5;
+}
+
+#third-desc {
+    margin: 20px 0;
+}
+
+.bold {
+    font-weight: 550;
+}
+
+#desc:hover {
+    background: rgb(10 16 54);
+    cursor: pointer;
+}
+#comments-num {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    font-size: 1.1rem;
+}
+.blue{
+    color: #3ea5fe;
+    cursor: pointer;
+}
+#sort {
+    display: flex;
+    align-items: center;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+#sort img {
+    height: 47px;
+}
+
+#add-comment {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin: 10px 0 30px
+}
+
+#add-comment img {
+    border-radius: 50%;
+    height: 23px;
+}
+
+#add-comment div input {
+    border: none;
+    background: #161718;
+    width: 670px;
+    padding: 8px;
+    font-size: .9rem;
+    color: white;
+}
+
+#add-comment div {
+    border-bottom: 1px solid #3f3e3f;
+}
+
+.comment {
+    display: flex;
+    gap: 15px;
+    font-size: .8rem;
+    margin-bottom: 20px;
+}
+
+.comment img {
+    border-radius: 50%;
+    height: 35px;
+    vertical-align: top;
+}
+
+.comment img:hover {
+    cursor: pointer;
+}
+
+.date:hover {
+    color: white;
+}
+
+.name {
+    cursor: pointer;
+}
+
+.translate {
+    width: 110px;
+    font-size: .8rem;
+    height: 17px;
+}
+
+.translate:hover {
+    border-bottom: 2px solid #3f3e3f;
+    cursor: pointer;
+}
+
+.comment-points,
+.comment-points-2 {
+    position: relative;
+    left: 198px;
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+    padding: 3px;
+    text-align: center;
+}
+
+.comment-points-2 {
+    left: 345px;
+    cursor: pointer;
+}
+
+.comment-points:hover {
+    cursor: pointer;
+}
+
+.name {
+    margin-bottom: 4px;
+}
+
+.comments-like {
+    display: flex;
+    align-items: center;
+    margin-top: 14px;
+}
+
+.comments-like img {
+    height: 20px;
+    margin-right: 5px;
+    cursor: pointer;
+}
+
+.comments-like .dislike-comment {
+    height: 25px;
+}
+
+.reply:hover {
+    cursor: pointer;
+    background: #3f3e3f;
+}
+
+.reply {
+    border-radius: 50%;
+    width: 47px;
+    text-align: center;
+    padding: 2px;
+    margin-left: 10px;
+}
+
+.comments-like img:hover {
+    background: #3f3e3f;
+}
+
+.dislike-comment {
+    margin: 0 20px 0 10px;
+}
+
+#right-navbar {
+    position: relative;
+    max-width: 380px;
+    margin-bottom: 20px;
+    margin-top: 8px;
+}
+
+#right-navbar ul {
+    display: flex;
+    align-items: center;
+    gap: 9px;
+    list-style: none;
+    overflow-x: auto;
+    white-space: nowrap;
+}
+
+#right-navbar ul::-webkit-scrollbar {
+    display: none;
+}
+
+#active {
+    background: white;
+    color: black;
+}
+
+.right-navbar-option {
+    cursor: pointer;
+    padding: 9px 12px;
+    background: #272727;
+    border-radius: 9px;
+    font-size: .85rem;
+    font-weight: 550;
+}
+
+#right-arrow,
+#left-arrow {
+    position: absolute;
+    background: #161718;
+    font-size: 1.7rem;
+    padding: 10px;
+    cursor: pointer;
+}
+
+#left-arrow {
+    display: none;
+    left: -5px;
+    background: linear-gradient(to left, transparent, #161718 10%);
+    border-radius: 50%;
+}
+
+#right-arrow {
+    right: -5px;
+    background: linear-gradient(to right, transparent, #161718 10%);
+    border-radius: 50%;
+}
+
+#right-arrow:hover,
+#left-arrow:hover {
+    background: #3f3e3f;
+}
+
+.suggested-vids {
+    display: block;
+}
+
+#menu {
+    scroll-behavior: smooth;
+}
+
+.suggested-vid {
+    display: flex;
+    margin-bottom: 10px;
+}
+.side-vid{
+        height: 92px;
+    margin: 0 10px 0 0;
+    border-radius: 10px;
+    display: none;
+}
+.suggested-vid>img {
+    height: 92px;
+    margin: 0 10px 0 0;
+    border-radius: 10px;
+}
+
+.vid-length {
+    width: 45px;
+    height: 21px;
+    background: black;
+    border-radius: 5px;
+    font-size: .8rem;
+    padding: 2px;
+    text-align: center;
+    background: rgba(0, 0, 0, 0.5);
+    position: relative;
+    left: -240px;
+    bottom: -68px;
+}
+
+.suggested-vid-title {
+    font-size: 0.8rem;
+    width: 198px;
+}
+.channel-name {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.check {
+    height: 17px;
+}
+
+.name-view {
+    font-size: .8rem;
+}
+
+.suggested-vid:hover {
+    cursor: pointer;
+}
+
+.points {
+    height: 30px;
+    width: 45px;
+    border-radius: 50%;
+    padding: 3px;
+    text-align: center;
+    position: relative;
+}
+
+.points:hover {
+    background-color: #3f3e3f;
+}
+
+
+
+.header {
+    height: 62px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    background:#161718 ;
+    padding: 0 16px;
+    position: fixed;
+    top: 0;
+    z-index: 1000;
+}
+
+.header-left {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    min-width: 240px;
+}
+
+.header-center {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+}
+
+.header-right {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    min-width: 260px;
+    justify-content: flex-end;
+}
+
+.icon-btn {
+    width: 48px;
+    height: 48px;
+    border: 0;
+    background: transparent;
+    border-radius: 50%;
+    display: grid;
+    place-items: center;
+    cursor: pointer;
+}
+
+.icon-btn:hover {
+    background: #5a5a5a;
+}
+
+.icon {
+    width: 26px;
+    height: 26px;
+    fill: #fff;
+}
+
+.logo-btn {
+    border: 0;
+    background: transparent;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+}
+
+.logo {
+    height: 20px;
+    width: auto;
+}
+
+.search-wrap {
+    display: flex;
+    align-items: center;
+    width: min(640px, 70vw);
+}
+
+.search-input {
+    height: 44px;
+    width: 100%;
+    border: 1px solid #3a3a3a;
+    border-right: 0;
+    border-radius: 999px 0 0 999px;
+    background: #0f0f0f;
+    color: #fff;
+    padding: 0 16px;
+    outline: none;
+}
+
+.search-btn {
+    height: 44px;
+    width: 72px;
+    border: 1px solid #3a3a3a;
+    border-radius: 0 999px 999px 0;
+    background: #1f1f1f;
+    cursor: pointer;
+    display: grid;
+    place-items: center;
+}
+
+.search-btn:hover {
+    background: #2a2a2a;
+}
+
+.search-icon {
+    width: 22px;
+    height: 22px;
+    fill: #fff;
+}
+
+.mic-btn {
+    width: 48px;
+    height: 48px;
+    border: 0;
+    border-radius: 50%;
+    background: #3a3a3a;
+    color: #fff;
+    cursor: pointer;
+    display: grid;
+    place-items: center;
+}
+
+.mic-btn:hover {
+    background: #4a4a4a;
+}
+
+.mic-icon {
+    width: 22px;
+    height: 22px;
+}
+
+.create-btn {
+    height: 40px;
+    padding: 0 14px;
+    border-radius: 999px;
+    border: 1px solid rgba(255, 255, 255, .12);
+    background: rgba(39, 39, 39, .95);
+    color: #fff;
+    font-weight: 700;
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    cursor: pointer;
+
+}
+
+.create-btn:hover {
+    background: #3a3a3a;
+}
+
+.create-plus {
+    width: 28px;
+    height: 28px;
+    /* border-radius: 50%; */
+    /* background: rgba(255, 255, 255, .10); */
+    display: grid;
+    place-items: center;
+}
+
+.plus-icon {
+    width: 30px;
+    height: 30px;
+    fill: #fff;
+}
+
+.profile-btn {
+    width: 48px;
+    height: 48px;
+    border: 0;
+    border-radius: 50%;
+    background: #5a5a5a;
+    cursor: pointer;
+    display: grid;
+    place-items: center;
+}
+
+.profile-btn:hover {
+    background: #6a6a6a;
+}
