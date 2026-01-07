@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>YouTube Home</title>
+    <link rel="stylesheet" href="first project.css">
+</head>
+
+<body>
+    <!-- Header Section -->
+    <header>
+        <div class="header-left">
+            <button id="menu-btn" aria-label="Menu">☰</button>
+            <img src="download (9).jfif" alt="YouTube Logo" class="logo">
+        </div>
+
+        <div class="header-center">
+            <form id="search-form">
+                <input type="text" placeholder="Search" id="search-input" aria-label="Search">
+                <button type="submit" id="search-btn">🔍</button>
+            </form>
+        </div>
+
+        <div class="header-right">
+            <button id="theme-toggle" aria-label="Toggle Theme">☀️</button>
+            <button aria-label="Upload Video">📹</button>
+            <button aria-label="Notifications">🔔</button>
+            <div class="user-dropdown">
+                <img src="https://via.placeholder.com/32" alt="User" class="user-icon">
+                <div class="dropdown-content">
+                    <a href="#">Your Channel</a>
+                    <a href="#">YouTube Studio</a>
+                    <a href="#">Sign Out</a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Sidebar Navigation -->
+    <aside id="sidebar">
+        <nav>
+            <ul>
+                <li><a href="#" class="active">🏠 Home</a></li>
+                <li><a href="#">🔥 Trending</a></li>
+                <li><a href="#">📺 Subscriptions</a></li>
+                <li><a href="#">📚 Library</a></li>
+                <li><a href="#">⏱️ History</a></li>
+                <li><a href="#">🎬 Shorts</a></li>
+                <li><a href="#">🌐 Explore</a></li>
+                <li><a href="#">⚙️ Settings</a></li>
+            </ul>
+        </nav>
+    </aside>
+
+    <!-- Main Content -->
+    <main id="main-content">
+        <!-- Recommended Section -->
+        <section class="video-section">
+            <h2>Recommended</h2>
+            <div class="video-grid">
+                <!-- Video Card using <video> -->
+                <div class="video-card">
+                    <a href="#">
+                        <video src="WhatsApp Video 2026-01-05 at 16.20.04.mp4" controls muted></video>
+                        <span class="duration">2:49</span>
+                    </a>
+                    <div class="video-info">
+                        <h3><a href="#">HTML-Introduction=W3School.com</a> <span class="verified">✔️</span></h3>
+                        <p>W3School • 1M views • 2 days ago</p>
+                    </div>
+                </div>
+
+                <div class="video-card">
+                    <a href="#">
+                        <video src="WhatsApp Video 2026-01-05 at 16.20.05.mp4" controls muted></video>
+                        <span class="duration">5:20</span>
+                    </a>
+                    <div class="video-info">
+                        <h3><a href="#">CSS-Introduction-W3School</a></h3>
+                        <p>W3School • 500K views • 1 week ago</p>
+                    </div>
+                </div>
+
+                <div class="video-card">
+                    <a href="#">
+                        <video src="WhatsApp Video 2026-01-05 at 16.20.06.mp4" controls muted></video>
+                        <span class="duration">3:45</span>
+                    </a>
+                    <div class="video-info">
+                        <h3><a href="#">JavaScript-Introduction-W3School</a> <span class="verified">✔️</span></h3>
+                        <p>W3School • 2M views • 3 days ago</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Trending Section -->
+        <section class="video-section">
+            <h2>Trending</h2>
+            <div class="video-grid">
+                <div class="video-card">
+                    <a href="#">
+                        <video src="WhatsApp Video 2026-01-05 at 16.29.19.mp4" controls muted></video>
+                        <span class="duration">13:18</span>
+                    </a>
+                    <div class="video-info">
+                        <h3><a href="#">100+ web development Things you should know</a></h3>
+                        <p>Trending Channel • 3M views • 1 day ago</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <p>© 2026 YouTube Clone • Privacy • Terms • About</p>
+    </footer>
+
+    <script src="first project.js"></script>
+</body>
+
+</html>
