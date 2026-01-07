@@ -1,0 +1,795 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Channel Page</title>
+    <link rel="stylesheet" href="css/channel.css" />
+  </head>
+
+  <body>
+    <header class="yt-header">
+  <div class="h-left">
+    <a class="logo" href="index.html">YouTube</a>
+  </div>
+
+  <div class="h-mid">
+    <input class="search" type="text" placeholder="Search" />
+    <button class="icon-btn" type="button" aria-label="Search">🔍</button>
+  </div>
+
+  <div class="h-right">
+    <button id="themeToggle" class="icon-btn" type="button">🌙</button>
+    <a class="icon-btn" href="channel.html" aria-label="Profile">M</a>
+  </div>
+</header>
+
+    <main class="page">
+      <!-- Banner -->
+      <section class="channel-banner">
+        <div class="banner"></div>
+      </section>
+
+      <!-- Channel Header -->
+      <section class="channel-header">
+        <img
+          class="avatar"
+          src="assets/channel_avatar.jpg"
+          alt="w3schools channel avatar"
+        />
+
+        <div class="info">
+          <h1 class="title">
+            w3schools.com
+            <svg class="verified" viewBox="0 0 24 24" aria-hidden="true">
+              <path
+                d="M12 1C5.925 1 1 5.925 1 12s4.925 11 11 11 11-4.925 11-11S18.075 1 12 1Zm5.707 7.293a1 1 0 010 1.414L10 17.414l-3.707-3.707a1 1 0 111.414-1.414L10 14.586l6.293-6.293a1 1 0 011.414 0Z"
+              />
+            </svg>
+          </h1>
+
+          <p class="meta">
+            <span>@w3schools</span> · 469K subscribers · 362 videos
+          </p>
+
+          <p class="desc">
+            Learn coding and become a web developer for free with W3Schools.com
+            <a href="#" class="more-links">...more</a>
+          </p>
+
+          <p>
+            <a href="#" class="links">w3schools.com</a
+            ><a href="#" class="more-links"> and 4 more links</a>
+          </p>
+
+          <button class="subscribe">Subscribe</button>
+        </div>
+      </section>
+      <div class="tabs-wrapper">
+        <nav class="channel-tabs">
+          <a href="#" class="active">Home</a>
+          <a href="#">Videos</a>
+          <a href="#">Shorts</a>
+          <a href="#">Courses</a>
+          <a href="#">Playlists</a>
+          <a href="#">Posts</a>
+
+          <button class="tab-search" aria-label="Search">
+            <svg viewBox="0 0 24 24" aria-hidden="true">
+              <path
+                d="M21 20l-5.6-5.6a7 7 0 10-1.4 1.4L20 21l1-1zM10 16a6 6 0 110-12 6 6 0 010 12z"
+              />
+            </svg>
+          </button>
+        </nav>
+      </div>
+      <section class="featured">
+        <div class="featured-row">
+          <div class="featured-media">
+            <video
+              class="featured-video"
+              controls
+              preload="metadata"
+              poster="assets/featured_video.jpg"
+            >
+              <source src="assets/featured.mp4" type="video/mp4" />
+              Your browser does not support the video tag.
+            </video>
+          </div>
+
+          <div class="featured-info">
+            <a href="#" class="featured-title"
+              >Learn HTML for Beginners - W3Schools.com</a
+            >
+            <p class="featured-meta">650,480 views • 1 year ago</p>
+
+            <p class="featured-desc">
+              This video teaches the HTML basics in just 47 minutes!
+            </p>
+            <p class="featured-desc">
+              This tutorial will get you ready to create websites quickly.
+            </p>
+
+            <p class="featured-desc">
+              The full tutorial this is based on:
+              <a class="featured-link" href="#"
+                >https://www.w3schools.com/html/defaul...</a
+              ><br />
+              Chapter by chapter playlist of of this video...
+            </p>
+
+            <button class="read-more" type="button">READ MORE</button>
+          </div>
+        </div>
+      </section>
+      <!-- ===== Shelves (Multiple playlists / Videos / Shorts / Popular videos) ===== -->
+      <div class="channel-content">
+        <!-- Multiple playlists -->
+        <section class="shelf" aria-label="Multiple playlists">
+          <h2 class="shelf-title">Multiple playlists</h2>
+
+          <div class="shelf-row">
+            <div class="shelf-track">
+              <a class="card" href="#" aria-label="HTML Tutorial">
+                <div class="thumb">
+                  <img src="assets/pl_html.jpg" alt="HTML Tutorial thumbnail" />
+                  <span class="badge-left">
+                    <span class="stack-icon" aria-hidden="true">
+                      <svg viewBox="0 0 24 24">
+                        <path
+                          d="M12 3 3 8l9 5 9-5-9-5Zm0 8L3 6v4l9 5 9-5V6l-9 5Zm0 6L3 12v4l9 5 9-5v-4l-9 5Z"
+                        ></path>
+                      </svg>
+                    </span>
+                    23 lessons
+                  </span>
+                </div>
+
+                <div class="card-meta">
+                  <div class="card-title">HTML Tutorial</div>
+                  <div class="card-sub">
+                    <span>w3schools.com</span>
+                    <span class="dot">•</span>
+                    <span class="verified" aria-label="Verified">
+                      <svg viewBox="0 0 24 24" aria-hidden="true">
+                        <path
+                          d="M12 1C5.925 1 1 5.925 1 12s4.925 11 11 11 11-4.925 11-11S18.075 1 12 1Zm5.707 7.293a1 1 0 010 1.414L10 17.414l-3.707-3.707a1 1 0 111.414-1.414L10 14.586l6.293-6.293a1 1 0 011.414 0Z"
+                        ></path>
+                      </svg>
+                    </span>
+                    <span class="dot">•</span>
+                    <span>Course</span>
+                  </div>
+                  <div class="card-link">View full course</div>
+                </div>
+              </a>
+
+              <a class="card" href="#" aria-label="CSS Tutorial">
+                <div class="thumb">
+                  <img src="assets/pl_css.jpg" alt="CSS Tutorial thumbnail" />
+                  <span class="badge-left">
+                    <span class="stack-icon" aria-hidden="true">
+                      <svg viewBox="0 0 24 24">
+                        <path
+                          d="M12 3 3 8l9 5 9-5-9-5Zm0 8L3 6v4l9 5 9-5V6l-9 5Zm0 6L3 12v4l9 5 9-5v-4l-9 5Z"
+                        ></path>
+                      </svg>
+                    </span>
+                    14 lessons
+                  </span>
+                </div>
+
+                <div class="card-meta">
+                  <div class="card-title">CSS Tutorial</div>
+                  <div class="card-sub">
+                    <span>w3schools.com</span><span class="dot">•</span>
+                    <span class="verified" aria-label="Verified">
+                      <svg viewBox="0 0 24 24" aria-hidden="true">
+                        <path
+                          d="M12 1C5.925 1 1 5.925 1 12s4.925 11 11 11 11-4.925 11-11S18.075 1 12 1Zm5.707 7.293a1 1 0 010 1.414L10 17.414l-3.707-3.707a1 1 0 111.414-1.414L10 14.586l6.293-6.293a1 1 0 011.414 0Z"
+                        ></path>
+                      </svg>
+                    </span>
+                    <span class="dot">•</span><span>Course</span>
+                  </div>
+                  <div class="card-link">View full course</div>
+                </div>
+              </a>
+
+              <a class="card" href="#" aria-label="Python Tutorial">
+                <div class="thumb">
+                  <img
+                    src="assets/pl_python.jpg"
+                    alt="Python Tutorial thumbnail"
+                  />
+                  <span class="badge-left">
+                    <span class="stack-icon" aria-hidden="true">
+                      <svg viewBox="0 0 24 24">
+                        <path
+                          d="M12 3 3 8l9 5 9-5-9-5Zm0 8L3 6v4l9 5 9-5V6l-9 5Zm0 6L3 12v4l9 5 9-5v-4l-9 5Z"
+                        ></path>
+                      </svg>
+                    </span>
+                    9 lessons
+                  </span>
+                </div>
+
+                <div class="card-meta">
+                  <div class="card-title">Python Tutorial</div>
+                  <div class="card-sub">
+                    <span>w3schools.com</span><span class="dot">•</span>
+                    <span class="verified" aria-label="Verified">
+                      <svg viewBox="0 0 24 24" aria-hidden="true">
+                        <path
+                          d="M12 1C5.925 1 1 5.925 1 12s4.925 11 11 11 11-4.925 11-11S18.075 1 12 1Zm5.707 7.293a1 1 0 010 1.414L10 17.414l-3.707-3.707a1 1 0 111.414-1.414L10 14.586l6.293-6.293a1 1 0 011.414 0Z"
+                        ></path>
+                      </svg>
+                    </span>
+                    <span class="dot">•</span><span>Course</span>
+                  </div>
+                  <div class="card-link">View full course</div>
+                </div>
+              </a>
+
+              <a class="card" href="#" aria-label="SQL Tutorial">
+                <div class="thumb">
+                  <img src="assets/pl_sql.jpg" alt="SQL Tutorial thumbnail" />
+                  <span class="badge-left">
+                    <span class="stack-icon" aria-hidden="true">
+                      <svg viewBox="0 0 24 24">
+                        <path
+                          d="M12 3 3 8l9 5 9-5-9-5Zm0 8L3 6v4l9 5 9-5V6l-9 5Zm0 6L3 12v4l9 5 9-5v-4l-9 5Z"
+                        ></path>
+                      </svg>
+                    </span>
+                    11 lessons
+                  </span>
+                </div>
+
+                <div class="card-meta">
+                  <div class="card-title">SQL Tutorial</div>
+                  <div class="card-sub">
+                    <span>w3schools.com</span><span class="dot">•</span>
+                    <span class="verified" aria-label="Verified">
+                      <svg viewBox="0 0 24 24" aria-hidden="true">
+                        <path
+                          d="M12 1C5.925 1 1 5.925 1 12s4.925 11 11 11 11-4.925 11-11S18.075 1 12 1Zm5.707 7.293a1 1 0 010 1.414L10 17.414l-3.707-3.707a1 1 0 111.414-1.414L10 14.586l6.293-6.293a1 1 0 011.414 0Z"
+                        ></path>
+                      </svg>
+                    </span>
+                    <span class="dot">•</span><span>Course</span>
+                  </div>
+                  <div class="card-link">View full course</div>
+                </div>
+              </a>
+
+              <a class="card" href="#" aria-label="Java Tutorial">
+                <div class="thumb">
+                  <img src="assets/pl_java.jpg" alt="Java Tutorial thumbnail" />
+                  <span class="badge-left">
+                    <span class="stack-icon" aria-hidden="true">
+                      <svg viewBox="0 0 24 24">
+                        <path
+                          d="M12 3 3 8l9 5 9-5-9-5Zm0 8L3 6v4l9 5 9-5V6l-9 5Zm0 6L3 12v4l9 5 9-5v-4l-9 5Z"
+                        ></path>
+                      </svg>
+                    </span>
+                    10 lessons
+                  </span>
+                </div>
+
+                <div class="card-meta">
+                  <div class="card-title">Java Tutorial</div>
+                  <div class="card-sub">
+                    <span>w3schools.com</span><span class="dot">•</span>
+                    <span class="verified" aria-label="Verified">
+                      <svg viewBox="0 0 24 24" aria-hidden="true">
+                        <path
+                          d="M12 1C5.925 1 1 5.925 1 12s4.925 11 11 11 11-4.925 11-11S18.075 1 12 1Zm5.707 7.293a1 1 0 010 1.414L10 17.414l-3.707-3.707a1 1 0 111.414-1.414L10 14.586l6.293-6.293a1 1 0 011.414 0Z"
+                        ></path>
+                      </svg>
+                    </span>
+                    <span class="dot">•</span><span>Course</span>
+                  </div>
+                  <div class="card-link">View full course</div>
+                </div>
+              </a>
+            </div>
+
+            <button class="shelf-next" type="button" aria-label="Next">
+              <svg viewBox="0 0 24 24" aria-hidden="true">
+                <path
+                  d="M9.29 6.71a1 1 0 0 0 0 1.41L13.17 12l-3.88 3.88a1 1 0 1 0 1.41 1.41l4.59-4.59a1 1 0 0 0 0-1.41L10.7 6.7a1 1 0 0 0-1.41.01Z"
+                ></path>
+              </svg>
+            </button>
+          </div>
+        </section>
+
+        <hr class="divider" />
+
+        <!-- Videos -->
+        <section class="shelf" aria-label="Videos">
+          <h2 class="shelf-title">Videos</h2>
+
+          <div class="shelf-row">
+            <div class="shelf-track">
+              <!-- Video card: make it clickable to a real YouTube URL -->
+              <a
+                class="vcard"
+                href="https://www.youtube.com/"
+                target="_blank"
+                rel="noreferrer"
+              >
+                <div class="thumb">
+                  <img
+                    src="assets/v_js_1.jpg"
+                    alt="JavaScript Arithmetic Operators thumbnail"
+                  />
+                  <span class="badge-right">3:28</span>
+                </div>
+
+                <div class="vmeta">
+                  <div class="vtitle">
+                    JavaScript - Arithmetic Operators - W3Schools.com
+                  </div>
+                  <div class="vsub">
+                    21K views <span class="dot">•</span> 10 months ago
+                  </div>
+                  <div class="vcc">CC</div>
+                </div>
+
+                <button class="kebab" type="button" aria-label="More options">
+                  <svg viewBox="0 0 24 24" aria-hidden="true">
+                    <path
+                      d="M12 7a2 2 0 1 0 0-4 2 2 0 0 0 0 4Zm0 7a2 2 0 1 0 0-4 2 2 0 0 0 0 4Zm0 7a2 2 0 1 0 0-4 2 2 0 0 0 0 4Z"
+                    ></path>
+                  </svg>
+                </button>
+              </a>
+
+              <a
+                class="vcard"
+                href="https://www.youtube.com/"
+                target="_blank"
+                rel="noreferrer"
+              >
+                <div class="thumb">
+                  <img
+                    src="assets/v_js_2.jpg"
+                    alt="JavaScript Arithmetic Operators Part 9 thumbnail"
+                  />
+                  <span class="badge-right">0:23</span>
+                </div>
+                <div class="vmeta">
+                  <div class="vtitle">
+                    JavaScript Arithmetic Operators - Part 9 - ...
+                  </div>
+                  <div class="vsub">
+                    4.3K views <span class="dot">•</span> 10 months ago
+                  </div>
+                </div>
+                <button class="kebab" type="button" aria-label="More options">
+                  <svg viewBox="0 0 24 24" aria-hidden="true">
+                    <path
+                      d="M12 7a2 2 0 1 0 0-4 2 2 0 0 0 0 4Zm0 7a2 2 0 1 0 0-4 2 2 0 0 0 0 4Zm0 7a2 2 0 1 0 0-4 2 2 0 0 0 0 4Z"
+                    ></path>
+                  </svg>
+                </button>
+              </a>
+
+              <a
+                class="vcard"
+                href="https://www.youtube.com/"
+                target="_blank"
+                rel="noreferrer"
+              >
+                <div class="thumb">
+                  <img
+                    src="assets/v_js_3.jpg"
+                    alt="JavaScript Arithmetic Operators Part 8 thumbnail"
+                  />
+                  <span class="badge-right">0:20</span>
+                </div>
+                <div class="vmeta">
+                  <div class="vtitle">
+                    JavaScript Arithmetic Operators - Part 8 - Operato...
+                  </div>
+                  <div class="vsub">
+                    1.1K views <span class="dot">•</span> 10 months ago
+                  </div>
+                </div>
+                <button class="kebab" type="button" aria-label="More options">
+                  <svg viewBox="0 0 24 24" aria-hidden="true">
+                    <path
+                      d="M12 7a2 2 0 1 0 0-4 2 2 0 0 0 0 4Zm0 7a2 2 0 1 0 0-4 2 2 0 0 0 0 4Zm0 7a2 2 0 1 0 0-4 2 2 0 0 0 0 4Z"
+                    ></path>
+                  </svg>
+                </button>
+              </a>
+
+              <a
+                class="vcard"
+                href="https://www.youtube.com/"
+                target="_blank"
+                rel="noreferrer"
+              >
+                <div class="thumb">
+                  <img
+                    src="assets/v_js_4.jpg"
+                    alt="JavaScript Arithmetic Operators Part 7 thumbnail"
+                  />
+                  <span class="badge-right">0:18</span>
+                </div>
+                <div class="vmeta">
+                  <div class="vtitle">
+                    JavaScript Arithmetic Operators - Part 7 - ...
+                  </div>
+                  <div class="vsub">
+                    2.2K views <span class="dot">•</span> 10 months ago
+                  </div>
+                </div>
+                <button class="kebab" type="button" aria-label="More options">
+                  <svg viewBox="0 0 24 24" aria-hidden="true">
+                    <path
+                      d="M12 7a2 2 0 1 0 0-4 2 2 0 0 0 0 4Zm0 7a2 2 0 1 0 0-4 2 2 0 0 0 0 4Zm0 7a2 2 0 1 0 0-4 2 2 0 0 0 0 4Z"
+                    ></path>
+                  </svg>
+                </button>
+              </a>
+
+              <a
+                class="vcard"
+                href="https://www.youtube.com/"
+                target="_blank"
+                rel="noreferrer"
+              >
+                <div class="thumb">
+                  <img
+                    src="assets/v_js_5.jpg"
+                    alt="JavaScript Arithmetic Operators Part 6 thumbnail"
+                  />
+                  <span class="badge-right">0:20</span>
+                </div>
+                <div class="vmeta">
+                  <div class="vtitle">
+                    JavaScript Arithmetic Operators - Part 6 - ...
+                  </div>
+                  <div class="vsub">
+                    1.8K views <span class="dot">•</span> 10 months ago
+                  </div>
+                </div>
+                <button class="kebab" type="button" aria-label="More options">
+                  <svg viewBox="0 0 24 24" aria-hidden="true">
+                    <path
+                      d="M12 7a2 2 0 1 0 0-4 2 2 0 0 0 0 4Zm0 7a2 2 0 1 0 0-4 2 2 0 0 0 0 4Zm0 7a2 2 0 1 0 0-4 2 2 0 0 0 0 4Z"
+                    ></path>
+                  </svg>
+                </button>
+              </a>
+            </div>
+
+            <button class="shelf-next" type="button" aria-label="Next">
+              <svg viewBox="0 0 24 24" aria-hidden="true">
+                <path
+                  d="M9.29 6.71a1 1 0 0 0 0 1.41L13.17 12l-3.88 3.88a1 1 0 1 0 1.41 1.41l4.59-4.59a1 1 0 0 0 0-1.41L10.7 6.7a1 1 0 0 0-1.41.01Z"
+                ></path>
+              </svg>
+            </button>
+          </div>
+        </section>
+
+        <hr class="divider" />
+
+        <!-- Shorts -->
+        <section class="shelf" aria-label="Shorts">
+          <h2 class="shelf-title">Shorts</h2>
+
+          <div class="shelf-row">
+            <div class="shelf-track">
+              <a class="card" href="#" aria-label="Shorts - CSS Tutorial">
+                <div class="thumb">
+                  <img src="assets/s_css.jpg" alt="Shorts CSS thumbnail" />
+                  <span class="badge-left">
+                    <span class="stack-icon" aria-hidden="true">
+                      <svg viewBox="0 0 24 24">
+                        <path
+                          d="M12 3 3 8l9 5 9-5-9-5Zm0 8L3 6v4l9 5 9-5V6l-9 5Zm0 6L3 12v4l9 5 9-5v-4l-9 5Z"
+                        ></path>
+                      </svg>
+                    </span>
+                    38 videos
+                  </span>
+                </div>
+
+                <div class="card-meta">
+                  <div class="card-title">Shorts - CSS Tutorial</div>
+                  <div class="card-sub">
+                    <span>w3schools.com</span><span class="dot">•</span>
+                    <span class="verified" aria-label="Verified">
+                      <svg viewBox="0 0 24 24" aria-hidden="true">
+                        <path
+                          d="M12 1C5.925 1 1 5.925 1 12s4.925 11 11 11 11-4.925 11-11S18.075 1 12 1Zm5.707 7.293a1 1 0 010 1.414L10 17.414l-3.707-3.707a1 1 0 111.414-1.414L10 14.586l6.293-6.293a1 1 0 011.414 0Z"
+                        ></path>
+                      </svg>
+                    </span>
+                    <span class="dot">•</span><span>Playlist</span>
+                  </div>
+                  <div class="card-link">View full playlist</div>
+                </div>
+              </a>
+
+              <a class="card" href="#" aria-label="Shorts - Python Tutorial">
+                <div class="thumb">
+                  <img
+                    src="assets/s_python.jpg"
+                    alt="Shorts Python thumbnail"
+                  />
+                  <span class="badge-left">
+                    <span class="stack-icon" aria-hidden="true">
+                      <svg viewBox="0 0 24 24">
+                        <path
+                          d="M12 3 3 8l9 5 9-5-9-5Zm0 8L3 6v4l9 5 9-5V6l-9 5Zm0 6L3 12v4l9 5 9-5v-4l-9 5Z"
+                        ></path>
+                      </svg>
+                    </span>
+                    27 lessons
+                  </span>
+                </div>
+
+                <div class="card-meta">
+                  <div class="card-title">Shorts - Python Tutorial</div>
+                  <div class="card-sub">
+                    <span>w3schools.com</span><span class="dot">•</span>
+                    <span class="verified" aria-label="Verified">
+                      <svg viewBox="0 0 24 24" aria-hidden="true">
+                        <path
+                          d="M12 1C5.925 1 1 5.925 1 12s4.925 11 11 11 11-4.925 11-11S18.075 1 12 1Zm5.707 7.293a1 1 0 010 1.414L10 17.414l-3.707-3.707a1 1 0 111.414-1.414L10 14.586l6.293-6.293a1 1 0 011.414 0Z"
+                        ></path>
+                      </svg>
+                    </span>
+                    <span class="dot">•</span><span>Course</span>
+                  </div>
+                  <div class="card-link">View full course</div>
+                </div>
+              </a>
+
+              <a class="card" href="#" aria-label="Shorts - SQL Tutorial">
+                <div class="thumb">
+                  <img src="assets/s_sql.jpg" alt="Shorts SQL thumbnail" />
+                  <span class="badge-left">
+                    <span class="stack-icon" aria-hidden="true">
+                      <svg viewBox="0 0 24 24">
+                        <path
+                          d="M12 3 3 8l9 5 9-5-9-5Zm0 8L3 6v4l9 5 9-5V6l-9 5Zm0 6L3 12v4l9 5 9-5v-4l-9 5Z"
+                        ></path>
+                      </svg>
+                    </span>
+                    36 lessons
+                  </span>
+                </div>
+
+                <div class="card-meta">
+                  <div class="card-title">Shorts - SQL Tutorial</div>
+                  <div class="card-sub">
+                    <span>w3schools.com</span><span class="dot">•</span>
+                    <span class="verified" aria-label="Verified">
+                      <svg viewBox="0 0 24 24" aria-hidden="true">
+                        <path
+                          d="M12 1C5.925 1 1 5.925 1 12s4.925 11 11 11 11-4.925 11-11S18.075 1 12 1Zm5.707 7.293a1 1 0 010 1.414L10 17.414l-3.707-3.707a1 1 0 111.414-1.414L10 14.586l6.293-6.293a1 1 0 011.414 0Z"
+                        ></path>
+                      </svg>
+                    </span>
+                    <span class="dot">•</span><span>Course</span>
+                  </div>
+                  <div class="card-link">View full course</div>
+                </div>
+              </a>
+
+              <a class="card" href="#" aria-label="Shorts - Java Tutorial">
+                <div class="thumb">
+                  <img src="assets/s_java.jpg" alt="Shorts Java thumbnail" />
+                  <span class="badge-left">
+                    <span class="stack-icon" aria-hidden="true">
+                      <svg viewBox="0 0 24 24">
+                        <path
+                          d="M12 3 3 8l9 5 9-5-9-5Zm0 8L3 6v4l9 5 9-5V6l-9 5Zm0 6L3 12v4l9 5 9-5v-4l-9 5Z"
+                        ></path>
+                      </svg>
+                    </span>
+                    43 lessons
+                  </span>
+                </div>
+
+                <div class="card-meta">
+                  <div class="card-title">Shorts - Java Tutorial</div>
+                  <div class="card-sub">
+                    <span>w3schools.com</span><span class="dot">•</span>
+                    <span class="verified" aria-label="Verified">
+                      <svg viewBox="0 0 24 24" aria-hidden="true">
+                        <path
+                          d="M12 1C5.925 1 1 5.925 1 12s4.925 11 11 11 11-4.925 11-11S18.075 1 12 1Zm5.707 7.293a1 1 0 010 1.414L10 17.414l-3.707-3.707a1 1 0 111.414-1.414L10 14.586l6.293-6.293a1 1 0 011.414 0Z"
+                        ></path>
+                      </svg>
+                    </span>
+                    <span class="dot">•</span><span>Course</span>
+                  </div>
+                  <div class="card-link">View full course</div>
+                </div>
+              </a>
+            </div>
+
+            <button class="shelf-next" type="button" aria-label="Next">
+              <svg viewBox="0 0 24 24" aria-hidden="true">
+                <path
+                  d="M9.29 6.71a1 1 0 0 0 0 1.41L13.17 12l-3.88 3.88a1 1 0 1 0 1.41 1.41l4.59-4.59a1 1 0 0 0 0-1.41L10.7 6.7a1 1 0 0 0-1.41.01Z"
+                ></path>
+              </svg>
+            </button>
+          </div>
+        </section>
+
+        <hr class="divider" />
+
+        <!-- Popular videos -->
+        <section class="shelf" aria-label="Popular videos">
+          <h2 class="shelf-title">Popular videos</h2>
+
+          <div class="shelf-row">
+            <div class="shelf-track">
+              <a
+                class="vcard"
+                href="https://www.youtube.com/"
+                target="_blank"
+                rel="noreferrer"
+              >
+                <div class="thumb">
+                  <img
+                    src="assets/pv_1.jpg"
+                    alt="HTML Introduction thumbnail"
+                  />
+                  <span class="badge-right">3:14</span>
+                </div>
+                <div class="vmeta">
+                  <div class="vtitle">HTML - Introduction - W3Schools.com</div>
+                  <div class="vsub">
+                    942K views <span class="dot">•</span> 1 year ago
+                  </div>
+                  <div class="vcc">CC</div>
+                </div>
+                <button class="kebab" type="button" aria-label="More options">
+                  <svg viewBox="0 0 24 24" aria-hidden="true">
+                    <path
+                      d="M12 7a2 2 0 1 0 0-4 2 2 0 0 0 0 4Zm0 7a2 2 0 1 0 0-4 2 2 0 0 0 0 4Zm0 7a2 2 0 1 0 0-4 2 2 0 0 0 0 4Z"
+                    ></path>
+                  </svg>
+                </button>
+              </a>
+
+              <a
+                class="vcard"
+                href="https://www.youtube.com/"
+                target="_blank"
+                rel="noreferrer"
+              >
+                <div class="thumb">
+                  <img
+                    src="assets/pv_2.jpg"
+                    alt="Python Introduction thumbnail"
+                  />
+                  <span class="badge-right">2:04</span>
+                </div>
+                <div class="vmeta">
+                  <div class="vtitle">
+                    Python - Introduction - W3Schools.com
+                  </div>
+                  <div class="vsub">
+                    820K views <span class="dot">•</span> 1 year ago
+                  </div>
+                  <div class="vcc">CC</div>
+                </div>
+                <button class="kebab" type="button" aria-label="More options">
+                  <svg viewBox="0 0 24 24" aria-hidden="true">
+                    <path
+                      d="M12 7a2 2 0 1 0 0-4 2 2 0 0 0 0 4Zm0 7a2 2 0 1 0 0-4 2 2 0 0 0 0 4Zm0 7a2 2 0 1 0 0-4 2 2 0 0 0 0 4Z"
+                    ></path>
+                  </svg>
+                </button>
+              </a>
+
+              <a
+                class="vcard"
+                href="https://www.youtube.com/"
+                target="_blank"
+                rel="noreferrer"
+              >
+                <div class="thumb">
+                  <img
+                    src="assets/pv_3.jpg"
+                    alt="Learn HTML for Beginners thumbnail"
+                  />
+                  <span class="badge-right">47:18</span>
+                </div>
+                <div class="vmeta">
+                  <div class="vtitle">
+                    Learn HTML for Beginners - W3Schools.com
+                  </div>
+                  <div class="vsub">
+                    650K views <span class="dot">•</span> 1 year ago
+                  </div>
+                </div>
+                <button class="kebab" type="button" aria-label="More options">
+                  <svg viewBox="0 0 24 24" aria-hidden="true">
+                    <path
+                      d="M12 7a2 2 0 1 0 0-4 2 2 0 0 0 0 4Zm0 7a2 2 0 1 0 0-4 2 2 0 0 0 0 4Zm0 7a2 2 0 1 0 0-4 2 2 0 0 0 0 4Z"
+                    ></path>
+                  </svg>
+                </button>
+              </a>
+
+              <a
+                class="vcard"
+                href="https://www.youtube.com/"
+                target="_blank"
+                rel="noreferrer"
+              >
+                <div class="thumb">
+                  <img src="assets/pv_4.jpg" alt="HTML Promo Video thumbnail" />
+                  <span class="badge-right">3:14</span>
+                </div>
+                <div class="vmeta">
+                  <div class="vtitle">HTML Promo Video</div>
+                  <div class="vsub">
+                    572K views <span class="dot">•</span> 4 years ago
+                  </div>
+                  <div class="vcc">CC</div>
+                </div>
+                <button class="kebab" type="button" aria-label="More options">
+                  <svg viewBox="0 0 24 24" aria-hidden="true">
+                    <path
+                      d="M12 7a2 2 0 1 0 0-4 2 2 0 0 0 0 4Zm0 7a2 2 0 1 0 0-4 2 2 0 0 0 0 4Zm0 7a2 2 0 1 0 0-4 2 2 0 0 0 0 4Z"
+                    ></path>
+                  </svg>
+                </button>
+              </a>
+
+              <a
+                class="vcard"
+                href="https://www.youtube.com/"
+                target="_blank"
+                rel="noreferrer"
+              >
+                <div class="thumb">
+                  <img src="assets/pv_5.jpg" alt="SQL Introduction thumbnail" />
+                  <span class="badge-right">3:14</span>
+                </div>
+                <div class="vmeta">
+                  <div class="vtitle">SQL - Introduction - W3Schools.com</div>
+                  <div class="vsub">
+                    516K views <span class="dot">•</span> 1 year ago
+                  </div>
+                  <div class="vcc">CC</div>
+                </div>
+                <button class="kebab" type="button" aria-label="More options">
+                  <svg viewBox="0 0 24 24" aria-hidden="true">
+                    <path
+                      d="M12 7a2 2 0 1 0 0-4 2 2 0 0 0 0 4Zm0 7a2 2 0 1 0 0-4 2 2 0 0 0 0 4Zm0 7a2 2 0 1 0 0-4 2 2 0 0 0 0 4Z"
+                    ></path>
+                  </svg>
+                </button>
+              </a>
+            </div>
+
+            <button class="shelf-next" type="button" aria-label="Next">
+              <svg viewBox="0 0 24 24" aria-hidden="true">
+                <path
+                  d="M9.29 6.71a1 1 0 0 0 0 1.41L13.17 12l-3.88 3.88a1 1 0 1 0 1.41 1.41l4.59-4.59a1 1 0 0 0 0-1.41L10.7 6.7a1 1 0 0 0-1.41.01Z"
+                ></path>
+              </svg>
+            </button>
+          </div>
+        </section>
+      </div>
+    </main>
+  </body>
+</html>
