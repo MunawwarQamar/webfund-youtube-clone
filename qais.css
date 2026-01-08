@@ -692,3 +692,238 @@ body {
 .profile-btn:hover {
     background: #6a6a6a;
 }
+body.light {
+    background: #ffffff;
+    color: #000000;
+}
+
+body.light .gray {
+    color: #555;
+}
+
+body.light .background {
+    background: #f2f2f2;
+}
+
+body.light .header {
+    background: #ffffff;
+}
+
+.header.scrolled {
+    background: #161718;
+}
+
+body.light .header.scrolled {
+    background: #ffffff;
+}
+
+body.light .icon,
+body.light .search-icon,
+body.light .plus-icon {
+    fill: #000;
+}
+
+body.light .logo g:first-child path {
+    fill: #FF0033;
+}
+
+body.light .logo g:first-child path + path {
+    fill: #fff;
+}
+
+body.light .logo g:not(:first-child) path {
+    fill: #000;
+}
+
+body.light .search-input {
+    background: #ffffff;
+    color: #000;
+    border-color: #ccc;
+}
+
+body.light .search-btn {
+    background: #eaeaea;
+}
+
+body.light .mic-btn,
+body.light .create-btn {
+    background: #eaeaea;
+    color: #000;
+    border-color: #ccc;
+}
+
+body.light .mic-icon {
+    stroke: #000;
+}
+
+body.light .profile-btn {
+    background: #eaeaea;
+}
+
+body.light #add-comment div input {
+    background: #ffffff;
+    color: #000;
+}
+
+body.light #add-comment div {
+    border-bottom: 1px solid #ccc;
+}
+
+body.light .comment {
+    color: #000;
+}
+
+.vid-length {
+    background: rgba(0, 0, 0, 0.5);
+    color: #fff;
+}
+
+.vid-length p {
+    color: #fff;
+}
+
+body.light .right-navbar-option {
+    background: #f2f2f2;
+    color: #000;
+}
+
+body.light #active {
+    background: #0f0f0f;
+    color: #fff;
+}
+
+body.light #right-arrow,
+body.light #left-arrow {
+    background: #ffffff;
+}
+
+body.light #left-arrow {
+    background: linear-gradient(to left, transparent, #ffffff 10%);
+}
+
+body.light #right-arrow {
+    background: linear-gradient(to right, transparent, #ffffff 10%);
+}
+
+body.light #right-arrow:hover,
+body.light #left-arrow:hover {
+    background: #e0e0e0;
+}
+
+body.light #desc:hover {
+    background: #eaeaea;
+}
+
+body.light .reply:hover,
+body.light .comments-like img:hover {
+    background: #e0e0e0;
+}
+
+body.light #like:hover,
+body.light #dislike:hover,
+body.light #share:hover,
+body.light #save:hover,
+body.light #more:hover {
+    background: #e0e0e0;
+}
+
+body.light #middle-line {
+    background: #cfcfcf;
+}
+
+body.light #channel button {
+    background: #0f0f0f;
+    color: #fff;
+}
+
+body.light #channel button:hover {
+    background: #2a2a2a;
+}
+
+body.light .comment-points svg circle,
+body.light .comment-points-2 svg circle,
+body.light .points svg circle {
+    fill: #000;
+}
+.theme-btn {
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    border: none;
+    background: #3a3a3a;
+    color: white;
+    font-size: 18px;
+    cursor: pointer;
+    display: grid;
+    place-items: center;
+}
+
+body.light .theme-btn {
+    background: #e0e0e0;
+    color: #000;
+}
+body.light .points svg circle,
+body.light .comment-points svg circle,
+body.light .comment-points-2 svg circle {
+    fill: #000;
+}
+
+body.light #more svg circle {
+    fill: #000;
+}
+
+body.light #likes img,
+body.light #share img,
+body.light #save img,
+body.light #dislike img,
+body.light .comments-like img,
+body.light #sort img {
+    filter: invert(1);
+}
+
+body.light #likes,
+body.light #share,
+body.light #save,
+body.light #more {
+    background: #f2f2f2;
+}
+
+.vid-length,
+.vid-length p {
+    color: #fff;
+}
+body.light .points:hover{
+    background: #e0e0e0;
+}
+.theme-btn {
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    border: none;
+    background: #3a3a3a;
+    cursor: pointer;
+    display: grid;
+    place-items: center;
+}
+
+.theme-btn:hover {
+    background: #4a4a4a;
+}
+
+.theme-icon {
+    width: 22px;
+    height: 22px;
+    fill: #ffffff;
+}
+
+body.light .theme-btn {
+    background: #e0e0e0;
+}
+
+body.light .theme-btn:hover {
+    background: #d5d5d5;
+}
+
+body.light .theme-icon {
+    fill: #000000;
+}

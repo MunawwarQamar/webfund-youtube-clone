@@ -1,3 +1,9 @@
+var arr= [
+    "",
+    ""
+]
+
+
 function left() {
     const menu = document.querySelector("#menu");
     menu.scrollLeft -= 150;
@@ -64,5 +70,30 @@ function changeBackground(){
         z.style.background = "#0f0f0f";
     } else {
         z.style.background = "#161718";
+    }
+}
+function toggleTheme() {
+    document.body.classList.toggle("light");
+
+    const icon = document.querySelector(".theme-icon");
+
+    if (document.body.classList.contains("light")) {
+        icon.innerHTML = `
+        <path d="M6.76 4.84l-1.8-1.79-1.41 1.41 1.79 1.8 1.42-1.42ZM1 11h3v2H1v-2Zm10-9h2v3h-2V2Zm7.66 3.46 1.41-1.41-1.79-1.8-1.42 1.42 1.8 1.79ZM17 11h3v2h-3v-2Zm-5 4a4 4 0 100-8 4 4 0 000 8Zm1 7h-2v-3h2v3Zm4.24-2.84 1.8 1.79 1.41-1.41-1.79-1.8-1.42 1.42ZM6.34 19.54l-1.41 1.41 1.79 1.8 1.42-1.42-1.8-1.79Z"/>
+        `;
+    } else {
+        icon.innerHTML = `
+        <path d="M21.861 14.006a8 8 0 01-10.87-10.87c.452-.816-.101-1.976-1-1.721C5.379 2.724 2 6.965 2 11.998c0 6.075 4.925 11 11 11 5.032 0 9.275-3.38 10.584-7.992.255-.9-.905-1.451-1.723-1Z"/>
+        `;
+    }
+}
+
+
+function changeBackground(){
+    const header = document.querySelector(".header");
+    if (window.scrollY > 0) {
+        header.classList.add("scrolled");
+    } else {
+        header.classList.remove("scrolled");
     }
 }
