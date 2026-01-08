@@ -5,6 +5,24 @@
     box-sizing: border-box;
 }
 
+:root {
+    --bg-color: #ffffff;
+    --text-color: #0f0f0f;
+    --header-bg: #ffffff;
+    --sidebar-bg: #ffffff;
+    --card-bg: #ffffff;
+    --border-color: #e5e5e5;
+}
+
+/* Dark mode */
+body.dark {
+    --bg-color: #0f0f0f;
+    --text-color: #ffffff;
+    --header-bg: #181818;
+    --sidebar-bg: #181818;
+    --card-bg: #202020;
+    --border-color: #303030;
+}
 body {
     font-family: 'Roboto', Arial, sans-serif;
     background-color: #fff;
@@ -512,4 +530,5 @@ body {
     margin: 5px 0 0 0;
     color: #666;
     font-size: 14px;
+
 }
