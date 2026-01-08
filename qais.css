@@ -927,3 +927,6 @@ body.light .theme-btn:hover {
 body.light .theme-icon {
     fill: #000000;
 }
+#channelName{
+    color: white;
+}
